@@ -38,7 +38,7 @@ function MobileNavigation({ onClose }) {
   return <nav id="mobile-nav" className="border-t border-white/10 bg-brand-dark px-4 py-4 md:hidden" aria-label="Mobile navigation">{navigationLinks.map(([label, href]) => <a key={href} className="block rounded-md px-3 py-3 text-gray-200 hover:bg-white/5" href={href} onClick={onClose}>{label}</a>)}</nav>;
 }
 
-export default function ClonePage() {
+export default function StarlightLandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
@@ -48,7 +48,7 @@ export default function ClonePage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <a href="#top" className="flex items-center gap-3" onClick={closeMenu}><span className="flex h-9 w-9 items-center justify-center rounded-md bg-brand-accent font-display text-lg font-bold text-brand-dark">S</span><span className="font-display text-lg font-bold tracking-tight">Starlight Consulting</span></a>
           <nav className="hidden items-center gap-7 text-sm font-medium text-gray-300 md:flex" aria-label="Primary navigation"><a className="hover:text-white" href="#services">Services</a><a className="hover:text-white" href="#approach">How we work</a><a className="hover:text-white" href="#about">Why Starlight</a><a className="rounded-md bg-brand-accent px-4 py-2.5 font-semibold text-brand-dark hover:bg-brand-accentHover" href="#contact">Start a conversation</a></nav>
-          <button className="rounded-md p-2 text-gray-300 md:hidden" type="button" aria-expanded={menuOpen} aria-controls="mobile-nav" aria-label="Toggle navigation" onClick={() => setMenuOpen((open) => !open)}><span className="block h-0.5 w-6 bg-current" /><span className="mt-1.5 block h-0.5 w-6 bg-current" /><span className="mt-1.5 block h-0.5 w-6 bg-current" /></button>
+          <button className="min-h-11 min-w-11 rounded-md p-2 text-gray-300 md:hidden" type="button" aria-expanded={menuOpen} aria-controls="mobile-nav" aria-label="Toggle navigation" onClick={() => setMenuOpen((open) => !open)}><span className="block h-0.5 w-6 bg-current" /><span className="mt-1.5 block h-0.5 w-6 bg-current" /><span className="mt-1.5 block h-0.5 w-6 bg-current" /></button>
         </div>
         {menuOpen && <MobileNavigation onClose={closeMenu} />}
       </header>

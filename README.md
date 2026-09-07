@@ -1,34 +1,29 @@
-# Rafał Homa — Elektryk (clone of rafalhomaelektryka.aura.build)
+# Starlight Consulting LLC
 
-Full clone of the single-page electrician landing site (Krynica-Zdrój / Nowy Sącz),
-exported from <https://rafalhomaelektryka.aura.build/>.
+Marketing site for Starlight Consulting LLC, a Southern California electrical consulting and project coordination company.
 
-## Contents
-
-| Path | What |
-| --- | --- |
-| `original/index.html` | **Verbatim original source** — 66 KB document extracted from the aura.build iframe (all markup, Tailwind classes, custom CSS, JSON-LD, content) |
-| `src/ClonePage.jsx` | The clone as one React component (Tailwind v4 + original CSS, sections as comments) |
-| `src/index.css` | Tailwind theme tokens (`brand` palette, Inter/Montserrat) + original custom CSS verbatim |
-| `public/images/` | All 6 original images downloaded at full resolution |
-| `index.html` | Original head preserved (meta, fonts, JSON-LD schema) |
-| `.tasks/clone-rafalhomaelektryka/` | Skill state: `context.md`, `review-notes.md`, screenshot + QA JSON evidence |
+The site is a static React/Vite build. It has no backend, database, analytics integration, or contact form yet; the current contact paths are phone and email links.
 
 ## Run
 
 ```bash
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # production → dist/
+npm run test:run
+npm run build
 ```
 
-## Fidelity notes
+## Project structure
 
-- Text, images, colors, fonts, sections, animations (scroll-reveal, hero sparks, mobile menu)
-  reproduced from source; hard-hat icon intentionally absent (not in the solar set —
-  the original renders it empty too).
-- External deps kept as in the original: Google Fonts, Google Maps embed, `mailto:` form.
-- QA: ACCEPTABLE — all elements byte/measure-identical; residual <2% height drift from
-  CDN-Tailwind-runtime vs compiled-Tailwind line wrapping (see `.tasks/.../review-notes.md`).
-- The original page shell itself is an aura.build builder page — its `srcdoc` document
-  is what this clone reproduces; it is also archived byte-for-byte in `original/`.
+| Path | Purpose |
+| --- | --- |
+| `src/ClonePage.jsx` | Starlight landing-page composition and content |
+| `src/index.css` | Tailwind setup and site-specific CSS |
+| `src/tokens.css` | Generated design tokens |
+| `public/images/` | Local site imagery |
+| `public/robots.txt` | Crawler rules for the pre-domain deployment |
+| `public/sitemap.xml` | Homepage sitemap for the GitHub Pages URL |
+| `.design-audit/DESIGN-AUDIT.md` | Design-system audit report |
+| `docs/` | Testing and code-quality notes |
+
+The Vite base path remains `/rafalhoma-electrician-clone/` because it matches the current GitHub Pages repository URL. Update it when the deployment path or custom domain changes.

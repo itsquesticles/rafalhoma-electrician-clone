@@ -20,6 +20,11 @@ color: var(--token-color-semantic-text-primary);
 -moz-osx-font-smoothing: grayscale;
 }
 
+:where(a, button):focus-visible {
+  outline: 2px solid var(--token-color-semantic-border-focus);
+  outline-offset: 3px;
+}
+
 .shadow-brand-cta {
 box-shadow: var(--token-shadow-brand);
 }

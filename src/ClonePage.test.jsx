@@ -1,12 +1,12 @@
 import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import ClonePage from "./ClonePage.jsx";
+import StarlightLandingPage from "./ClonePage.jsx";
 
-describe("ClonePage", () => {
+describe("StarlightLandingPage", () => {
   afterEach(cleanup);
 
   it("renders the business message and primary contact paths", () => {
-    render(<ClonePage />);
+    render(<StarlightLandingPage />);
 
     expect(screen.getByRole("heading", { name: /electrical projects/i, level: 1 })).toBeInTheDocument();
     expect(screen.getByText("Electrical Project Consulting")).toBeInTheDocument();
@@ -15,9 +15,10 @@ describe("ClonePage", () => {
   });
 
   it("opens and closes the mobile navigation", () => {
-    render(<ClonePage />);
+    render(<StarlightLandingPage />);
     const toggle = screen.getByRole("button", { name: "Toggle navigation" });
 
+    expect(toggle).toHaveClass("min-h-11", "min-w-11");
     expect(screen.queryByRole("navigation", { name: "Mobile navigation" })).not.toBeInTheDocument();
     fireEvent.click(toggle);
     expect(screen.getByRole("navigation", { name: "Mobile navigation" })).toBeInTheDocument();

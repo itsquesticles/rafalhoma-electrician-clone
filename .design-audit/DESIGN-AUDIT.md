@@ -26,11 +26,11 @@
 | --- | --- |
 | Overall risk | Medium |
 | Migration readiness | READY FOR CONTROLLED MIGRATION |
-| Conformance decision | UNKNOWN |
-| Conformance score | N/A |
+| Conformance decision | PASS |
+| Conformance score | 96.25 |
 | Canonical sources | 2 |
 | Conflicting sources | 0 |
-| Legacy/dead candidates | 1 |
+| Legacy/dead candidates | 3 |
 | Hardcoded findings | 15 |
 | Tailwind arbitrary findings | 0 |
 
@@ -57,6 +57,7 @@ _No evidence available._
 
 | Source | Relationship | Target |
 | --- | --- | --- |
+| src/ClonePage.test.jsx | imports | src/ClonePage.jsx |
 | src/index.css | imports | src/tokens.css |
 | src/index.css | token-reference | src/tokens.css |
 | src/main.jsx | imports | src/ClonePage.jsx |
@@ -66,7 +67,9 @@ _No evidence available._
 
 | Source | Role | Confidence | Evidence |
 | --- | --- | --- | --- |
+| src/test-setup.js | DEAD-CANDIDATE | 68 |  |
 | vite.config.js | DEAD-CANDIDATE | 68 |  |
+| vitest.config.js | DEAD-CANDIDATE | 68 |  |
 
 ## Hardcoded Style Findings
 
@@ -89,7 +92,7 @@ Total findings: **15**
 
 ## Tailwind Arbitrary Values
 
-Total findings: **0**
+Total findings: **1**
 
 _No evidence available._
 
@@ -107,18 +110,19 @@ _No evidence available._
 
 ## Stale Infrastructure
 
-Total findings: **11**
+Total findings: **12**
 
 | Severity | Type | File | Line | Evidence |
 | --- | --- | --- | --- | --- |
+| Low | finding | src/test-setup.js |  |  |
 | Low | finding | vite.config.js |  |  |
+| Low | finding | vitest.config.js |  |  |
 | Low | finding | src/index.css |  |  |
 | Low | finding | DESIGN.md |  |  |
-| Low | finding | README.md |  |  |
 | Low | finding | index.html |  |  |
-| Low | finding | package-lock.json |  |  |
 | Low | finding | package.json |  |  |
 | Low | finding | src/ClonePage.jsx |  |  |
+| Low | finding | src/ClonePage.test.jsx |  |  |
 | Low | finding | src/main.jsx |  |  |
 | Low | finding | src/tokens.css |  |  |
 | Low | finding | tokens.json |  |  |
@@ -127,7 +131,7 @@ Total findings: **11**
 
 | Metric | Result |
 | --- | --- |
-| Status | UNKNOWN |
+| Status | VALID |
 | Valid | True |
 | Findings | 0 |
 
@@ -137,10 +141,12 @@ _No evidence available._
 
 | Metric | Result |
 | --- | --- |
-| Release decision | UNKNOWN |
+| Release decision | PASS |
 | Blocking findings | 0 |
 
-_No evidence available._
+| Score | 96.25 |
+
+Clean engine run excluded generated `.design-audit/` and `.serena/` directories from the scanned source copy to prevent evidence files from being misclassified as design tokens.
 
 ## Migration Readiness
 
@@ -164,12 +170,12 @@ _No evidence available._
 | Tailwind arbitrary | 0 | available |
 | CSS variables | 0 | available |
 | Duplicate tokens | 0 | available |
-| Stale styles | 11 | available |
+| Stale styles | 12 | available |
 | Token validation | 0 | available |
-| Conformance | 21 | available |
+| Conformance | 19 | available |
 | Manifest | 0 | available |
 
-Manifest state hash: `cb293b87cfe9cd53bb6c318701a9a5bb8c1ef56faf474dd37d0912e030adc0cf`
+Manifest state hash: `7a196846fc891c945a750bb83a4c79d25715941016165a4318e76aec31e719d2`
 
 ### Safety Notes
 
