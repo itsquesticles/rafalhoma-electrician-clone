@@ -26,4 +26,4 @@ npm run build
 | `.design-audit/DESIGN-AUDIT.md` | Design-system audit report |
 | `docs/` | Testing and code-quality notes |
 
-The Vite base path remains `/rafalhoma-electrician-clone/` because it matches the current GitHub Pages repository URL. Update it when the deployment path or custom domain changes.
+Vite uses `/rafalhoma-electrician-clone/` for GitHub Pages and `/` for Vercel, so assets resolve correctly on both hosts.

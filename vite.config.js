@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/rafalhoma-electrician-clone/",
+  base: process.env.VERCEL === "1" ? "/" : "/rafalhoma-electrician-clone/",
   plugins: [react(), tailwindcss()],
 });
