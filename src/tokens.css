@@ -1,0 +1,66 @@
+/* AUTO-GENERATED FILE. DO NOT EDIT DIRECTLY.
+ * Role: DERIVED TOKEN VARIABLE LAYER
+ * Source: tokens.json
+ * Source SHA-256: 71d5175469dfc5e69c2936e131fad0e5a31cdcb0224774d4ea400bb3109af43c
+ * Regenerate from tokens.json via scripts/generate_css_variables.py.
+ */
+
+:root {
+  --token-color-primitive-danger: #EF4444;
+  --token-color-primitive-gold: #F5C518;
+  --token-color-primitive-gold-hover: #E5B510;
+  --token-color-primitive-gray-300: #D1D5DB;
+  --token-color-primitive-gray-400: #9CA3AF;
+  --token-color-primitive-navy: #0A0F1E;
+  --token-color-primitive-navy-card: #0D1B2A;
+  --token-color-primitive-navy-deep: #050810;
+  --token-color-primitive-slate: #1F2937;
+  --token-color-primitive-slate-strong: #374151;
+  --token-color-primitive-success: #22C55E;
+  --token-color-primitive-warning: #F59E0B;
+  --token-color-primitive-white: #FFFFFF;
+  --token-color-semantic-action-primary: var(--token-color-primitive-gold);
+  --token-color-semantic-action-primary-foreground: var(--token-color-primitive-navy);
+  --token-color-semantic-action-primary-hover: var(--token-color-primitive-gold-hover);
+  --token-color-semantic-border-default: var(--token-color-primitive-slate-strong);
+  --token-color-semantic-border-focus: var(--token-color-primitive-gold);
+  --token-color-semantic-border-subtle: var(--token-color-primitive-slate);
+  --token-color-semantic-status-danger: var(--token-color-primitive-danger);
+  --token-color-semantic-status-success: var(--token-color-primitive-success);
+  --token-color-semantic-status-warning: var(--token-color-primitive-warning);
+  --token-color-semantic-surface-canvas: var(--token-color-primitive-navy);
+  --token-color-semantic-surface-inset: var(--token-color-primitive-slate);
+  --token-color-semantic-surface-raised: var(--token-color-primitive-navy-card);
+  --token-color-semantic-text-inverse: var(--token-color-primitive-navy);
+  --token-color-semantic-text-muted: var(--token-color-primitive-gray-400);
+  --token-color-semantic-text-primary: var(--token-color-primitive-white);
+  --token-color-semantic-text-secondary: var(--token-color-primitive-gray-300);
+  --token-radius-full: 9999px;
+  --token-radius-lg: 12px;
+  --token-radius-md: 8px;
+  --token-radius-scrollbar: 4px;
+  --token-radius-sm: 6px;
+  --token-radius-xl: 16px;
+  --token-shadow-brand: 0 0 15px rgba(245, 197, 24, 0.1);
+  --token-shadow-brand-hover: 0 0 20px rgba(245, 197, 24, 0.3);
+  --token-spacing-lg: 24px;
+  --token-spacing-md: 16px;
+  --token-spacing-scrollbar: 8px;
+  --token-spacing-section: 96px;
+  --token-spacing-sm: 8px;
+  --token-spacing-unit: 4px;
+  --token-spacing-xl: 32px;
+  --token-typography-font-family-display: Montserrat, ui-sans-serif, system-ui, sans-serif;
+  --token-typography-font-family-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --token-typography-font-size-2xl: 1.5rem;
+  --token-typography-font-size-3xl: 1.875rem;
+  --token-typography-font-size-5xl: 3rem;
+  --token-typography-font-size-base: 1rem;
+  --token-typography-font-size-lg: 1.125rem;
+  --token-typography-font-size-sm: 0.875rem;
+  --token-typography-font-weight-bold: 700;
+  --token-typography-font-weight-medium: 500;
+  --token-typography-font-weight-regular: 400;
+  --token-typography-font-weight-semibold: 600;
+  --token-typography-line-height-tight: 1.1;
+}
